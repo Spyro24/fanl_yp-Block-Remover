@@ -1,6 +1,16 @@
 # fanl_yp Antivir
 
-This Tool will help you to save your created games thats are infected by nondeletable blocks.
+A Python tool to clean your created game files infected by undeletable or corrupted blocks, allowing recovery without affecting any level data.
+
+## Overview
+
+fanl_yp-Block-Remover removes problematic blocks from game files while leaving level data untouched. It offers two modes to control which blocks are removed:
+
+    Mode 1: Select blocks you want to remove.
+
+    Mode 2: Select blocks you want to keep (all other blocks will be removed).
+
+This approach gives you flexible control over cleaning your game files.
 
 ## Usage
 
