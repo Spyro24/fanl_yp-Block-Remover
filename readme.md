@@ -16,9 +16,11 @@ Python 3.12 or newer
 ## Usage
 Make sure that you have a backup of your gamefiles
 
-1. Open a terminal or command prompt.
-2. Navigate to the directory containing the script.
-3. Run: `python3 deinfectGameFile.py`
-4. Follow the steps
-5. rename the output file `[GameID]_fixed` to `[GameID]`
-6. zip it and impoort it back
+1. Extract the Backup
+2. Copy the File that will be modfied to a place of your choice (to avoid problems)
+3. Open a terminal or command prompt.
+4. Navigate to the directory containing the script.
+5. Run: `python3 deinfectGameFile.py`
+6. Follow the steps
+7. rename the output file `[GameID]_fixed` to `[GameID]`
+8. zip it and impoort it back
