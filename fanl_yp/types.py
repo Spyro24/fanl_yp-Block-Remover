@@ -68,15 +68,14 @@ class Header:
             self.bits |= 1 << offset
         else:
             self.bits &= 0b1111_1111_1111_1111 ^ (1 << offset)
-
         return self
 
 class Setting:
     def __init__(self):
         self.index = None #np.uint8
         self.position = None #Vector3Uint16
-        self.type = None  ### enum Setting.Types
-        self.value = None    ### u8 | u16 | i32 | f32 | vec3f32 | string
+        self.type = None  # enum Setting.Types
+        self.value = None    # u8 | u16 | i32 | f32 | vec3f32 | string
         self.Types = {
             "Byte": 0x01,
             "Short": 0x02,
@@ -110,14 +109,14 @@ class objectContainer:
         self.settings: list[Setting] = []
         self.connections: list[Connection] = []
         self.Header: Header = Header
-
+        
         self.Types = {
             "Normal"  : 0,
             "Physics" : 1,
             "Script"  : 2,
             "Level"   : 3,
             }
-
+        
         self.Color = {
             "None"         : 0x00,
             "DarkGray"     : 0x01,
@@ -162,7 +161,7 @@ class objectContainer:
             "Surface": 3,
             "Exact":   4,
             }
-
+        
         self.Group = Group
         self.Faces = Faces
         self.Tiles = Tiles
@@ -177,7 +176,7 @@ class defaultObjectContainer(objectContainer):
         self.type = type_
         self.name = name
     
-    def level(self, name, color=None):
+    def level(self, name, color=5):
         objectContainer = self(self.Types['Level'], name)
         if type(color) == int:
             objectContainer.backgroundColor = color
